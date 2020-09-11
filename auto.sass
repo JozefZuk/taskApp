@@ -1,5 +1,73 @@
-.mainDiv___titleBox
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    grid-gap: 50px
+$mainColor: #8540AF
+
+.responsive-big-title
+    margin: 0
+.responsive-big-text
+    margin-bottom: 5vh
+
+.purpleBtn
+    background-color: $mainColor
+
+    border: 4px solid $mainColor
+    border-radius: 50px
+
+
+    margin: 150px auto
+    padding: 15px 100px
+
+    text-decoration: none
+    color: #000000
+    font-weight: 700
+ 
+
+    transition: 0.3s ease-in-out
+
+
+.purpleBtn:hover
+    color: $mainColor
+    background: none
+    box-shadow: 1px 1px 50px $mainColor
     
+.f-vw
+    width: 90%
+    padding: 5vh 5%
+
+    
+@media only screen and (min-width: 1000px) 
+    .half-vw
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 50px
+    
+    
+    /* text */
+    .responsive-big-title
+        font-size: 7vh
+        font-weight: 900
+        
+    
+    .responsive-big-text
+        font-size: 2.5vh
+    
+    .purpleBtn
+        font-size: 2vh
+    
+@media only screen and (max-width: 1000px) 
+    .half-vw 
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        grid-gap: 10px
+    
+    @media only screen and (min-width: 700px) 
+        .responsive-big-title
+            font-size: 70px
+        
+        .responsive-big-text
+            font-size: 30px
+
+
+
+.colorText
+    color: $mainColor
+
+/* No CSS # sourceMappingURL=auto.css.map */
